@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+header { background: #1a1a1a; color: white; padding: 20px; text-align: center; }
+.logo { width: 100px; margin-bottom: 10px; }
+h1 { margin: 0; font-size: 2em; }
+.tagline { font-size: 1.1em; color: #ccc; }
+nav { background: #333; padding: 10px; text-align: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; }
+main { padding: 20px; max-width: 800px; margin: auto; }
+footer { background: #1a1a1a; color: white; text-align: center; padding: 15px; margin-top: 40px; }
