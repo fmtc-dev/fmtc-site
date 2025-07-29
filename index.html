@@ -2,88 +2,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forward Motion Talent & Consulting</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            display: flex;
-            justify-content: center;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        .hero {
-            width: 100%;
-            height: 300px;
-            background: url('hero.jpg') center/cover no-repeat;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-        }
-        .form-container {
-            margin-top: 2rem;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .form-container input {
-            width: 100%;
-            padding: 0.5rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .form-container button {
-            background-color: #007bff;
-            color: white;
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Forward Motion Talent & Consulting</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1f1f1f;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #121212;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 2px solid #333;
+    }
+    nav {
+      background-color: #1a1a1a;
+      padding: 0.75rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00bcd4;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+                  url('hero.jpg') center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #2c2c2c;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .form-container {
+      margin-top: 2rem;
+    }
+    .form-container input, .form-container button {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 4px;
+    }
+    .form-container input {
+      background: #444;
+      color: #fff;
+    }
+    .form-container button {
+      background-color: #00bcd4;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .form-container button:hover {
+      background-color: #0097a7;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Forward Motion Talent & Consulting</h1>
-        <p>Strategic Talent. Tailored Consulting.</p>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Partners</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="hero"></div>
-    <main>
-        <p>Welcome to Forward Motion Talent & Consulting (FMTC). We help businesses grow through tailored recruiting partnerships and strategic consulting built on trust and real results.</p>
-        <div class="form-container">
-            <h2>Join Our Network</h2>
-            <p>Get updates on C2C partnerships, new roles, and FMTC news.</p>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
-            <button>Subscribe</button>
-        </div>
-    </main>
+  <header>
+    <h1>Forward Motion Talent & Consulting</h1>
+    <p>Strategic Talent. Tailored Consulting.</p>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Partners</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="hero">
+    <div>
+      <h1>Driving Success Through Partnership</h1>
+      <p>Connecting top talent with forward-thinking companies through tailored consulting and recruiting.</p>
+    </div>
+  </div>
+  <main>
+    <h2>Join Our Network</h2>
+    <p>Get updates on C2C partnerships, new roles, and FMTC news.</p>
+    <div class="form-container">
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <button>Subscribe</button>
+    </div>
+  </main>
 </body>
 </html>
