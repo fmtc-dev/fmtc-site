@@ -1,47 +1,89 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Forward Motion Talent & Consulting</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forward Motion Talent & Consulting</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .hero {
+            width: 100%;
+            height: 300px;
+            background: url('hero.jpg') center/cover no-repeat;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+        }
+        .form-container {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .form-container input {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            background-color: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-
-<header class="hero">
-  <img src="hero.jpg" alt="Business partnership visual" class="hero-img" />
-  <h1>Forward Motion Talent & Consulting</h1>
-  <p class="tagline">Strategic Talent. Tailored Consulting.</p>
-</header>
-
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="partners.html">Partners</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
-
-<main>
-  <section>
-    <p>Welcome to Forward Motion Talent & Consulting (FMTC). We help businesses grow through tailored recruiting partnerships and strategic consulting built on trust and real results.</p>
-  </section>
-
-  <section class="signup-form">
-    <h2>Join Our Network</h2>
-    <p>Get updates on C2C partnerships, new roles, and FMTC news.</p>
-    <form action="https://formspree.io/f/xjkorzlw" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-</main>
-
-<footer>
-  &copy; 2025 Forward Motion Talent & Consulting, LLC
-</footer>
-
+    <header>
+        <h1>Forward Motion Talent & Consulting</h1>
+        <p>Strategic Talent. Tailored Consulting.</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Partners</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hero"></div>
+    <main>
+        <p>Welcome to Forward Motion Talent & Consulting (FMTC). We help businesses grow through tailored recruiting partnerships and strategic consulting built on trust and real results.</p>
+        <div class="form-container">
+            <h2>Join Our Network</h2>
+            <p>Get updates on C2C partnerships, new roles, and FMTC news.</p>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <button>Subscribe</button>
+        </div>
+    </main>
 </body>
 </html>
