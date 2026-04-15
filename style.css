@@ -91,6 +91,13 @@ p {
 .partner-link {
   color: #00bcd4;
   text-decoration: none;
+  position: relative;
+}
+
+.partner-link::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.7;
 }
 
 .partner-link:hover {
