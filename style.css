@@ -47,6 +47,48 @@ nav a:hover {
   color: #00bcd4;
 }
 
+/* Hero */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url('hero.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+  line-height: 1.5;
+}
+
+.hero .supporting-line {
+  font-size: 1rem;
+  color: #d6d6d6;
+}
+
 /* Main content */
 main {
   max-width: 900px;
