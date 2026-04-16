@@ -1,309 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Forward Motion Talent & Consulting</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forward Motion Talent & Consulting</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #1f1f1f;
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1f1f1f;
+        color: #f0f0f0;
+        line-height: 1.6;
+      }
 
-    header {
-      background-color: #121212;
-      padding: 1rem 2rem;
-      text-align: center;
-      border-bottom: 2px solid #333;
-    }
+      header {
+        background-color: #121212;
+        padding: 1rem 2rem;
+        text-align: center;
+        border-bottom: 2px solid #333;
+      }
 
-    nav {
-      background-color: #1a1a1a;
-      padding: 0.75rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-    }
+      nav {
+        background-color: #1a1a1a;
+        padding: 0.75rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+      }
 
-    nav a {
-      color: #f0f0f0;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+      nav a {
+        color: #f0f0f0;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
 
-    nav a:hover {
-      color: #00bcd4;
-    }
+      nav a:hover {
+        color: #00bcd4;
+      }
 
-    .hero {
-      min-height: 100vh;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.75)),
-                  url('hero.jpg') center center / cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-      padding: 2rem;
-    }
+      .hero {
+        min-height: 100vh;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url("hero.jpg") center center / cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        padding: 2rem;
+      }
 
-    .hero-content {
-      max-width: 900px;
-    }
+      .hero-content {
+        max-width: 900px;
+      }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: 0 auto 1rem;
-    }
-
-    .hero .supporting-line {
-      font-size: 1.05rem;
-      color: #d6d6d6;
-      max-width: 760px;
-    }
-
-    .content-section {
-      max-width: 1000px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background-color: #2c2c2c;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    .content-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .card {
-      background-color: #242424;
-      padding: 1.5rem;
-      border-radius: 8px;
-      border: 1px solid #3a3a3a;
-    }
-
-    .card h3 {
-      color: #00bcd4;
-      margin-bottom: 0.75rem;
-      font-size: 1.1rem;
-    }
-
-    .card p {
-      font-size: 0.98rem;
-      color: #e6e6e6;
-    }
-
-    .steps {
-      display: grid;
-      gap: 1rem;
-    }
-
-    .step {
-      background-color: #242424;
-      padding: 1.25rem 1.5rem;
-      border-left: 4px solid #00bcd4;
-      border-radius: 6px;
-    }
-
-    .step h3 {
-      margin-bottom: 0.4rem;
-      color: #00bcd4;
-    }
-
-    .network-section {
-      max-width: 800px;
-      margin: 3rem auto 4rem;
-      padding: 2rem;
-      background-color: #2c2c2c;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }
-
-    .network-section h2 {
-      margin-bottom: 0.75rem;
-      text-align: center;
-    }
-
-    .network-section p {
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .form-container {
-      margin-top: 1rem;
-    }
-
-    .form-container input,
-    .form-container button {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: none;
-      border-radius: 4px;
-      font-size: 1rem;
-    }
-
-    .form-container input {
-      background: #444;
-      color: #fff;
-    }
-
-    .form-container button {
-      background-color: #00bcd4;
-      color: #fff;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .form-container button:hover {
-      background-color: #0097a7;
-    }
-
-    @media (max-width: 768px) {
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
 
       .hero p {
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto 1rem;
+      }
+
+      .hero .supporting-line {
         font-size: 1.05rem;
+        color: #d6d6d6;
+        max-width: 760px;
       }
 
-      .content-section,
-      .network-section {
-        margin: 2rem 1rem;
+      .content-section {
+        max-width: 1000px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background-color: #2c2c2c;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .content-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .card {
+        background-color: #242424;
         padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #3a3a3a;
       }
-    }
-  </style>
 
-  <link rel="stylesheet" href="style.css">
-  
-</head>
-<body>
-  <header>
-<h1>Technical Talent Partners for High-Impact Hiring</h1>
-<p class="eyebrow">Forward Motion Talent & Consulting</p>
-  </header>
+      .card h3 {
+        color: #00bcd4;
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+      }
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="how-we-work.html">How We Work</a>
-  <a href="partners.html">Partners</a>
-  <a href="contact.html" class="cta-button">Start a Conversation</a>
-</nav>
+      .card p {
+        font-size: 0.98rem;
+        color: #e6e6e6;
+      }
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>High-impact technical roles filled right with a partner embedded in your team</h1>
+      .steps {
+        display: grid;
+        gap: 1rem;
+      }
 
-<p>We partner directly with enterprise teams to deliver consistent, high-quality hiring outcomes</p>
-    </div>
-  </section>
+      .step {
+        background-color: #242424;
+        padding: 1.25rem 1.5rem;
+        border-left: 4px solid #00bcd4;
+        border-radius: 6px;
+      }
 
-  <section class="content-section">
-  <h2>Roles We Support</h2>
-  <p>We support hiring across senior and hard-to-fill technical roles, including:</p>
+      .step h3 {
+        margin-bottom: 0.4rem;
+        color: #00bcd4;
+      }
 
-  <ul>
-    <li>Network Engineering and Infrastructure</li>
-    <li>Cloud and DevOps Engineering</li>
-    <li>Software Development</li>
-    <li>Systems and Platform Engineering</li>
-    <li>Technical Product and Delivery Leadership</li>
-  </ul>
-</section>
+      .network-section {
+        max-width: 800px;
+        margin: 3rem auto 4rem;
+        padding: 2rem;
+        background-color: #2c2c2c;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
 
-<section class="content-section">
-  <h2>Environments We Support</h2>
-  <p>Our experience spans a range of technical environments, including regulated and security-focused organizations:</p>
+      .network-section h2 {
+        margin-bottom: 0.75rem;
+        text-align: center;
+      }
 
-  <ul>
-    <li>Government and defense-related environments</li>
-    <li>Cybersecurity and security-focused organizations</li>
-    <li>Healthcare and regulated industries</li>
-    <li>Enterprise and infrastructure-heavy organizations</li>
-  </ul>
-</section>
-  
-  <section class="content-section">
-    <h2>How We’re Different</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Direct partnership</h3>
-        <p>You work with us directly, without pass-through communication or competing priorities created by layered recruiting models.</p>
+      .network-section p {
+        text-align: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .form-container {
+        margin-top: 1rem;
+      }
+
+      .form-container input,
+      .form-container button {
+        width: 100%;
+        padding: 0.75rem;
+        margin: 0.5rem 0;
+        border: none;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      .form-container input {
+        background: #444;
+        color: #fff;
+      }
+
+      .form-container button {
+        background-color: #00bcd4;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .form-container button:hover {
+        background-color: #0097a7;
+      }
+
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.2rem;
+        }
+
+        .hero p {
+          font-size: 1.05rem;
+        }
+
+        .content-section,
+        .network-section {
+          margin: 2rem 1rem;
+          padding: 1.5rem;
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Technical Talent Partners for High-Impact Hiring</h1>
+      <p class="eyebrow">Forward Motion Talent & Consulting</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="how-we-work.html">How We Work</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html" class="cta-button">Start a Conversation</a>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          High-impact technical roles filled right by a partner embedded in your
+          team
+        </h1>
+
+        <p>
+          We partner directly with enterprise teams to deliver consistent,
+          high-quality hiring outcomes
+        </p>
       </div>
-      <div class="card">
-        <h3>Focused delivery</h3>
-        <p>We prioritize alignment and quality over candidate volume, so every introduction is worth your team’s time.</p>
-      </div>
-      <div class="card">
-        <h3>Consistency across critical roles</h3>
-        <p>We support ongoing hiring needs by focusing on the roles that matter most and delivering with consistency as demand evolves.</p>
-      </div>
-      <div class="card">
-        <h3>Embedded approach</h3>
-        <p>We operate as an extension of your team, aligned with how you define roles, evaluate talent, and move hiring forward.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="content-section">
-    <h2>How We Work</h2>
-    <div class="steps">
-      <div class="step">
-        <h3>1. Align on the role and business need</h3>
-        <p>We start by understanding the technical requirements, team context, and business impact behind each search.</p>
-      </div>
-      <div class="step">
-        <h3>2. Deliver focused candidate flow</h3>
-        <p>We present qualified, relevant talent with an emphasis on fit, not volume.</p>
-      </div>
-      <div class="step">
-        <h3>3. Stay engaged through close</h3>
-        <p>We remain hands-on throughout the process to support feedback loops, decision-making, and successful hiring outcomes.</p>
-      </div>
-    </div>
-  </section>
+    <section class="working-with-us">
+      <h2>What Working With Us Looks Like</h2>
+      <ul>
+        <li>You work directly with the person accountable for delivery</li>
+        <li>We prioritize high-impact roles over volume reqs</li>
+        <li>You get consistent, qualified candidates, not noise</li>
+        <li>Feedback loops stay tight so roles don’t stall</li>
+      </ul>
+    </section>
 
-  <section class="network-section">
-    <h2>Join Our Network</h2>
-    <p>Get updates on C2C partnerships, new roles, and FMTC news.</p>
-    <div class="form-container">
-      <input type="text" placeholder="Your Name" />
-      <input type="email" placeholder="Your Email" />
-      <button>Subscribe</button>
-    </div>
-  </section>
+    <section class="content-section">
+      <h2>Roles We Support</h2>
+      <p>
+        We support hiring across senior and hard-to-fill technical roles,
+        including:
+      </p>
 
-  <footer>
-    &copy; 2025 Forward Motion Talent & Consulting, LLC
-  </footer>
+      <ul>
+        <li>Network Engineering and Infrastructure</li>
+        <li>Cloud and DevOps Engineering</li>
+        <li>Software Development</li>
+        <li>Systems and Platform Engineering</li>
+        <li>Technical Product and Delivery Leadership</li>
+      </ul>
+    </section>
 
-</body>
+    <section class="content-section">
+      <h2>Environments We Support</h2>
+      <p>
+        Our experience spans a range of technical environments, including
+        regulated and security-focused organizations:
+      </p>
+
+      <ul>
+        <li>Government and defense-related environments</li>
+        <li>Cybersecurity and security-focused organizations</li>
+        <li>Healthcare and regulated industries</li>
+        <li>Enterprise and infrastructure-heavy organizations</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>How We’re Different</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Direct partnership</h3>
+          <p>
+            You work with us directly, without pass-through communication or
+            competing priorities created by layered recruiting models.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Focused delivery</h3>
+          <p>
+            We prioritize alignment and quality over candidate volume, so every
+            introduction is worth your team’s time.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Consistency across critical roles</h3>
+          <p>
+            We support ongoing hiring needs by focusing on the roles that matter
+            most and delivering with consistency as demand evolves.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Embedded approach</h3>
+          <p>
+            We operate as an extension of your team, aligned with how you define
+            roles, evaluate talent, and move hiring forward.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>How We Work</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Align on the role and business need</h3>
+          <p>
+            We start by understanding the technical requirements, team context,
+            and business impact behind each search.
+          </p>
+        </div>
+        <div class="step">
+          <h3>2. Deliver focused candidate flow</h3>
+          <p>
+            We present qualified, relevant talent with an emphasis on fit, not
+            volume.
+          </p>
+        </div>
+        <div class="step">
+          <h3>3. Stay engaged through close</h3>
+          <p>
+            We remain hands-on throughout the process to support feedback loops,
+            decision-making, and successful hiring outcomes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="network-section">
+      <h2>Join Our Network</h2>
+      <p>Get updates on C2C partnerships, new roles, and FMTC news.</p>
+      <div class="form-container">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <button>Subscribe</button>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Forward Motion Talent & Consulting, LLC</footer>
+  </body>
 </html>
