@@ -65,26 +65,32 @@ nav a:hover {
 }
 
 /* What Working With Us */
+/* What Working With Us */
 .working-with-us {
   max-width: 900px;
   margin: 4rem auto;
   padding: 0 1rem;
+  text-align: center;
 }
 
 .working-with-us h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .working-with-us ul {
   list-style: none;
   padding: 0;
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  display: inline-block;
+  text-align: left;
 }
 
 .working-with-us li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 0.75rem;
+  line-height: 1.5;
 }
 
 .working-with-us li::before {
