@@ -66,9 +66,9 @@ nav a:hover {
 
 /* What Working With Us */
 .working-with-us {
-  max-width: 700px;   /* narrower = feels centered */
+  max-width: 900px;
   margin: 4rem auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .working-with-us h2 {
