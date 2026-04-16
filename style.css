@@ -65,7 +65,6 @@ nav a:hover {
 }
 
 /* What Working With Us */
-/* What Working With Us */
 .working-with-us {
   max-width: 900px;
   margin: 4rem auto;
@@ -89,8 +88,9 @@ nav a:hover {
 .working-with-us li {
   position: relative;
   padding-left: 1.5rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.5;
+  margin-bottom: 0.6rem;   /* tighter spacing */
+  line-height: 1.5;        /* slightly tighter */
+  font-size: 1.05rem;      /* slightly smaller */
 }
 
 .working-with-us li::before {
