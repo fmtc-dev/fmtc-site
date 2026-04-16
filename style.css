@@ -73,7 +73,7 @@ nav a:hover {
 }
 
 .working-with-us h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 
@@ -88,7 +88,7 @@ nav a:hover {
 .working-with-us li {
   position: relative;
   padding-left: 1.5rem;
-  margin-bottom: 0.6rem;   /* tighter spacing */
+  margin-bottom: 0.5rem;   /* tighter spacing */
   line-height: 1.5;        /* slightly tighter */
   font-size: 1.05rem;      /* slightly smaller */
 }
